@@ -5,10 +5,178 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>FlexBox</title>
     <style>
-        
+        body {
+            background-color: grey;
+
+        }
+        .h1 {
+            text-align: center;
+            background-color: crimson;
+            color: white;
+            text-shadow: 2px 2px black;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: crimson;
+        }
+        .flex-container > div {
+            background-color: grey;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+
+        .flex-container2 {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: crimson;
+        }
+        .flex-container2 > div {
+            background-color: grey;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+
+        .flex-container3 {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: crimson;
+        }
+        .flex-container3 > div {
+            background-color: grey;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+
+        .flex-container4 {
+            display: flex;
+            flex-direction: column;
+            background-color: crimson;
+        }
+        .flex-container4 > div {
+            background-color: grey;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .flex-container5 {
+            display: flex;
+            justify-content: center;
+            background-color: crimson;
+        }
+        .flex-container5 > div {
+            background-color: grey;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+
+
+        .flex-container6 {
+            display: flex;
+            justify-content: space-around;
+            background-color: crimson;
+        }
+        .flex-container6 > div {
+            background-color: grey;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
-    <h1>Using Flexbox</h1>
+    <h1 class="h1">Using Flexbox</h1><br><br>
+    <h1 class="h1">Flexible Boxes</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+
+    <p>Try to resize the browser window.</p>
+    <p>A container with "flex-wrap: nowrap; will never wrap its items.</p><br><br>
+    <h1 class="h1">The flex direction Property</h1>
+    <div class="flex-container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>Heres its code!</p>
+    <p> .flex-container2 {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: crimson;
+    } <br>
+    .flex-container2 > div {
+        background-color: grey;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    
+    </p><br><br>
+    <h1 class="h1">Here are some more examples</h1>
+    <h1 class="h1">Column Reverse</h1>
+    <div class="flex-container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div><br><br>
+    <h1 class="h1">Column</h1>
+    <div class="flex-container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div><br><br>
+
+    <h1 class="h1">The justify-content Property</h1>
+    <div class="flex-container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div><br><br>
+
+    <h1 class="h1">Space Around</h1>
+    <div class="flex-container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div><br><br>
 </body>
 </html>
